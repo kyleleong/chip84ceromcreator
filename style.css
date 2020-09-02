@@ -1,0 +1,11 @@
+#appvarname {
+  text-transform: uppercase;
+}
+
+#errormessage {
+  color: red;
+}
+
+div {
+  margin-top: 2em;
+}

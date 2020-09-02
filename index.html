@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CHIP84CE ROM Converter</title>
+    <!-- File Format: http://merthsoft.com/linkguide/ti83+/fformat.html -->
+    <!-- Undocumented Structs: https://github.com/mateoconlechuga/convbin -->
+  </head>
+  <body>
+    <header>
+      <h1>CHIP84CE ROM Converter</h1>
+      <aside>
+        Convert CHIP-8 ROMs into an AppVar, the format readable by the
+        <a href="https://github.com/kyleleong/chip84ce">CHIP84CE emulator.</a>
+      </aside>
+    </header>
+    <div>
+      <label for="romfile">Select ROM:</label> <br />
+      <input type="file" id="romfile" name="romfile" /> <br />
+      <label for="appvar">AppVar Name:</label> <br />
+      <input type="text" id="appvar" name="appvar" maxlength="8" />
+    </div>
+    <div>
+      <button type="button" onclick="convertRom()"><b>Convert ROM</b></button>
+    </div>
+    <div>
+      <p id="errormessage"></p>
+    </div>
+    <script src="romconverter.js"></script>
+  </body>
+</html>
